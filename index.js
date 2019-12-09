@@ -19,9 +19,9 @@ document.addEventListener("keydown", function(e) {
 function moveDodgerRight() {
 	// let leftNumbers = dodger.style.left.replace("px", "");
 	let right = parseInt(dodger.style.left, 10);
-
+	// console.log(game.clientWidth)
 	// if ((right + dodger.clientWidth) < game.clientWidth) {
-	if ((right + dodger.clientWidth) < 400) { //game.clientWidth = 400....
+	if ((right + dodger.clientWidth) < 400) { // but game.clientWidth = 400....
 			dodger.style.left = `${right + 1}px`;
 	}
 }
